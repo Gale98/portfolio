@@ -1,0 +1,51 @@
+// didn't include this one!
+@mixin section-align-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin section-align-column {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    align-items: center;
+}
+
+
+@mixin section-margin {
+    margin: 19rem 0;
+}
+
+@mixin hamburger-style {
+    h5 {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: $color-white;
+    }
+}
+
+
+
+
+
+
+
+/* @mixin scroll {
+    .hidden {
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateX(-100%);
+        transition: all 1s;
+    }
+    .show {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+} */

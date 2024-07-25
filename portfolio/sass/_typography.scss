@@ -1,0 +1,106 @@
+.signature {
+    font-family: "Great Vibes", cursive;
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: $color-redish;
+  }
+
+
+// nav-menu class
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+    a {
+        text-decoration: none;
+        color: $color-white;
+        position: relative;
+    
+    
+        // try to use mixin later
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -1rem;
+            left: 0;
+            width: 0%;
+            height: 0.3rem;
+            background-color: $color-redish;
+            transition: all .4s;
+        }
+        &:hover::before {
+            width: 100%;
+        }
+    }
+    
+    
+    li {
+        font-family: "Inter", sans-serif;
+        list-style-type: none;
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin: 0 2rem;
+        
+    }
+}
+
+
+
+// h1 Poppins
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 4rem;
+    color: $color-white;
+    line-height: 4.5rem;
+    margin-bottom: 2rem;
+}
+// h2 inter
+h2 {
+    /* font-family: "Inter", sans-serif; */
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    color: $color-white;
+    line-height: 4.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        left: 0;
+        right: 0;
+        height: 7px;
+        background-color: $color-redish;
+        z-index: -1;
+    }
+}
+h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 1.3rem;
+    color: $color-white;
+}
+h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    color: $color-white;
+}
+
+q {
+    font-family: "Literata", serif;
+    font-size: 1.5rem;
+    color: $color-white;
+}
+// p inter $color-grey
+p {
+    font-family: "Inter", sans-serif;
+    font-size: 1.1rem;
+    color: $color-grey-light;
+    width: 27rem;
+    margin: 0.8rem 0rem 0.8rem 0rem;
+}
+
+
+
